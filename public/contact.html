@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head lang="en">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Us</title>
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="/screen.css" />
+<html lang="en">
+  <head>
+    <title>Path of Light Yoga Studio</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="yoga.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
-  <body class="secondPage">
-    <header>
-      <img class="headerImg" src="assets/lilyheader.jpg" alt="lillyheader" />
-    </header>
-    <nav>
-      <a href="index.html">Main Content</a>
-    </nav>
-    <h2>Contact Us:</h2>
-    <dl class="contactInfo">
-      <dt>Address:</dt>
-      <dd>1234 Central Ave, St. Petersburg FL, 33708</dd>
-      <dt>Business Number:</dt>
-      <dd>(727)-123-1234</dd>
-    </dl>
-    <img src="assets/yogamat.jpg" alt="yogamat" />
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-      perspiciatis veniam nesciunt quas quam ratione eos nulla optio, vitae sint
-      omnis amet culpa id provident inventore temporibus illo hic. Sed!
-    </p>
-    <footer>
-      The Yoga Company Copyright © 2019 All rights reserved.
-    </footer>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Path of Light Yoga Studio</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <img
+          src="./assets/yogadoor2.jpg"
+          alt="door to yoga studio"
+          width="225"
+          height="300"
+          class="floatleft"
+        />
+        <h2>Contact Path of Light Yoga Studio</h2>
+        <p>Required information is marked with an asterisk (*)</p>
+        <form method="POST" action="https://webdevbasics.net/scripts/yoga.php">
+          <label for="myName">*Name:</label>
+          <input type="text" name="myName" id="myName" required="required"></input>
+          <label for="myEmail">*E-mail:</label>
+          <input type="email" name="myEmail" id="myEmail" required="required"></input>
+          <label for="myComments">*Comments:</label>
+          <textarea name="myComments" id="myComments" cols="20" rows="2" required="required"></textarea>
+          <input type="submit" name="mySubmit" id="mySubmit" value="Send Now">
+        </form>
+      </main>
+      <footer>
+        <small
+          ><i
+            >Copyright &copy; 2016 Path of Light Yoga Studio<br />
+            <a href="mailto:yourfirstname@yourlastname.com"
+              >yourfirstname@yourlastname.com</a
+            >
+          </i></small
+        >
+      </footer>
+    </div>
   </body>
 </html>
